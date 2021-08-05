@@ -1,5 +1,5 @@
-var height = parseInt(prompt("enter the height in cm:"));
-var weight = parseInt(prompt("enter the weight in kg:"));
+var height = parseFloat(prompt("enter the height in cm:"));
+var weight = parseFloat(prompt("enter the weight in kg:"));
 
 if (height == "")
     document.write("Provide a valid Height!");
@@ -9,7 +9,7 @@ else if (weight == "")
 else {
 
 
-    var bmi = (weight / ((height * height) / 10000));
+    var bmi = weight / (height * height);
 
 
     if (bmi < 18.6) {
