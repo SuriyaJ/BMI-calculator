@@ -1,4 +1,4 @@
-var height = parseFloat(prompt("enter the height in cm:"));
+var height = parseFloat(prompt("enter the height in meters:"));
 var weight = parseFloat(prompt("enter the weight in kg:"));
 
 if (height == "")
