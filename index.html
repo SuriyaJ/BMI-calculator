@@ -8,22 +8,34 @@
     <title>Document</title>
     <script src="script.js"></script>
     <style>
-        h1 {
+        .box {
+            border: 50px solid rgba(124, 223, 248, 0.425);
             text-align: center;
-            font-weight: bold;
-            padding-top: 50px;
-            height: 50px;
-            width: 600px;
-            margin: 300px;
-            margin-left: 450px;
-            border: 50px solid orange;
+            height: auto;
+            font-size: 40px;
         }
     </style>
 
 </head>
 
 <body>
-    <h1>BMI Calculator</h1>
+    <div class="box">
+        <h1>BMI Calculator</h1>
+        <b>HEIGHT</b><input type="text" id="in1" value="" placeholder="input">
+        <select name="" id="range1">
+        <option value="cm" id="range1">centimeter</option>
+        <option value="m" id="range1">meters</option>
+    </select><br>
+        <b>WEIGHT</b><input type="text" id="in2" value="" placeholder="input">
+        <select name="" id="range2">
+            <option value="kg" id="range2">kilogram</option>
+            <option value="lbs" id="range2">lbs</option>
+        </select><br>
+        <button onclick="calc()">click</button>
+        <input type="text" id="out" value=""> <br> result:
+        <div id="div"></div>
+        <button onclick="reset()">reset</button>
+    </div>
 </body>
 
 </html>
